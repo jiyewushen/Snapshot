@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.4.1)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+#include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inclue/libyuv)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/source SOURCE)
+add_library(yuv STATIC ${SOURCE})
